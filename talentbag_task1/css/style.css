@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header-section .header{
+    color:#7c7c7c;
+    font-size: 1.5rem;
+    padding:5px 30px 0px;
+    
+    
+}
+
+#hero .background{
+    padding-left: 5%;
+    overflow:hidden;
+    height:92vh;
+    background: #feed92;
+    
+}
+#hero .left-div{
+    padding:80px 100px;
+    width:45%;
+    margin-right: 5%;
+    /* border:1px solid red; */
+    float:left;
+    height:560px;
+}
+.left-div h1{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.left-div h1{
+    font-size: 2.5rem;
+
+}
+.left-div .list{
+    margin-bottom: 30px;
+}
+ul{
+    font-size:1.1rem;
+    padding:0 20px;
+    
+}
+ul li{
+    padding-right: 60px;
+    margin-bottom: 10px;
+}
+.form{
+    width:100%;
+}
+#form .textbox{
+    font-size:0.7rem;
+    padding:5px;
+    border:2px solid rgb(179, 179, 179);
+    border-radius: 4px;
+    height:35px;
+    width:100%;
+    margin-bottom: 15px;
+}
+.left-div #form .button1{
+    margin-top: 2px;
+    font-size: 1.2rem;
+    font-weight:lighter;
+    background: #51b1ec;
+    border:none;
+    width:100%;
+    height:40px;
+    border-radius: 8px;
+    color:white;
+    transition:all 0.6s;
+}
+.left-div #form .button1:hover{
+    background: #008fe7;
+}
+.left-div #form .note{
+    font-weight:600;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.6rem;
+}
+#hero .right-div-bg{
+    margin-top: 130px;
+    background: url(../imgs/clock.png);
+    background-repeat: no-repeat;
+    background-size:400px 450px;
+    background-position: right;
+    
+    float:left;
+    width:45%;
+    height:571px;
+    overflow:hidden;
+}
+#hero .right-div img{
+    
+    width: 100%;
+}
+
+
+
+/* slider start */
+#slider-section{
+    height:100vh;
+    background: rgb(255, 255, 255);
+       
+}
+
+#slider-section .mycontainer .slider-heading{
+    font-size: 1.7rem;
+    padding:15px;
+    text-align: center;
+}
+
+#slider{
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+}
+#radio input{
+    display:none;
+}
+.mycontainer1 {
+    width: 80%;
+    margin:20px auto;
+}
+#slider input[type=radio]{
+    display:none;
+}
+#slider label{
+    cursor:pointer;
+    text-decoration: none;
+}
+#slides{
+    padding:30px;
+    position: relative;
+    z-index: 1;
+}
+#overflow{
+    width:100%;
+    overflow: hidden;
+}
+
+.slide_content{
+    margin-top: 0px;
+    /* border:1px solid red; */
+    display: flex;
+}
+.slider #slides .left-div img{
+      height:150px;
+      width:150px;
+      margin-left: 70px;
+      margin-right: 40px;
+      margin-top: 40px;
+
+}
+.slider #slides .left-div{
+    
+    float:left;
+}
+.slider #slides .right-div{
+    float:left;
+}
+
+.slider #slides .right-div .name{
+    margin-top: 30px;
+    font-size: 22px; 
+    margin-bottom: 20px;
+}
+
+ 
+  
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+}
+#slide2:checked ~ #slides .inner{
+    margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner{
+    margin-left: -200%;
+}
+
+#slides .inner{
+    transition: margin-left 800ms cubic-beizer(0.770,0.000,0.175,1.000);
+    width:300%;
+}
+
+#slides .slide{
+    width:33.33%;
+    float:left;
+    display:block;
+    height:100%;
+}
+.slide_content{
+    padding: 10px;
+}
+#controls {
+    margin:-130px 0 0 0;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+#controls label{
+    transition: opacity 0.8s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity:0.4;
+
+}
+#controls label:hover{
+    opacity:1;
+
+}
+
+
+#bullets{
+    margin:100px 0 0;
+    text-align: center;
+}
+#bullets label{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background:#ccc;
+    margin:0 10px;
+}
+#bullets label:hover{
+    background:#202020;
+}
+
+/* slider end */
+
+/* multistep form start */
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+#m-step-form {
+	height: 100vh;
+	/*Image only BG fallback*/
+	
+	/*background = gradient + image pattern combo*/
+	background: 
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	font-family: montserrat, arial, verdana;
+}
+/*form styles*/
+#msform {
+	width: 400px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 13px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 15px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+   
+    margin-bottom: 30px;
+    
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+    
+
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 15px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 50px auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -70%;
+	top: 57px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
+
+ul#progressbar{
+    padding-inline-start: 50px;
+}
+
+/* multistep form end */
+
+.tp{
+    min-height:500px;
+    background: #123456;
+}
+
+/* tabs start */
+
+/* Tabs*/
+.tabs-section {
+    height:100vh;
+    padding: 60px 0;
+}
+
+.tabs-section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#tabs{
+	background: #007b5e;
+    color: #eee;
+}
+#tabs h6.section-title{
+    color: #eee;
+}
+
+#tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f3f3f3;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #eee;
+    font-size: 20px;
+}
+
+/* tabs end */
+
+
+@media (max-width:600px) {
+    #hero .right-div-bg{
+        display:none;
+    }
+    #hero .left-div{
+        width:100%;
+        
+    }
+    #hero .left-div{
+        padding:70px 60px;
+        
+    }
+    
+    .left-div h1{
+        font-size: 2.1rem;
+    
+    }
+    .left-div .list{
+        margin-bottom: 20px;
+    }
+    
+    ul li{
+        font-size: 1rem;
+        padding-right: 80px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .left-div #form .note{
+        font-weight:600;
+        margin-top: 15px;
+        text-align: center;
+        font-size: 0.5rem;
+    } 
+
+
+    #slider-section{
+        height:100vh;
+        background: rgb(255, 255, 255);
+           
+    }
+    
+    #slider-section .mycontainer .slider-heading{
+        font-size: 1.7rem;
+        padding:15px;
+        text-align: center;
+    }
+    
+    #slider{
+        margin: 0 auto;
+        width: 100px;
+        max-width:50%;
+    }
+
+    .mycontainer1 {
+        width: 80%;
+        margin: 0px auto;
+    }
+    #slider input[type=radio]{
+        display:none;
+    }
+    #slider label{
+        cursor:pointer;
+        text-decoration: none;
+    }
+    #slides{
+        padding:0px;
+        position: relative;
+        z-index: 1;
+    }
+    #overflow{
+        width:100%;
+        overflow: hidden;
+    }
+    
+    .slide_content{
+        margin-top: 0px;
+        text-align: center;
+        /* border:1px solid red; */
+        
+    }
+    .slider #slides .left-div img{
+          display:block;
+          height:150px;
+          width:150px;
+          margin-left: 0px;
+          margin-right: 40px;
+          margin-top: 40px;
+    
+    }
+    .slider #slides .left-div{
+       
+       display:block;
+    }
+    .slider #slides .right-div{
+        line-height: 21px;
+        text-align: center;
+        display:block;
+        
+    }
+    
+    .slider #slides .right-div .name{
+        margin-top: 30px;
+        font-size: 24px; 
+        margin-bottom: 20px;
+    }
+
+
+    #progressbar li:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        position: absolute;
+        left: -80%;
+        top: 57px;
+        z-index: -1; /*put it behind the numbers*/
+    }
+
+    #msform {
+        width: 400px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+    }
+}
